@@ -17,6 +17,6 @@ app.get('/', (req, res) => {
 
 
 const httpServer = http.createServer (app);
-httpServer.listen(8080, () =>{
+httpServer.listen(80, () =>{
     console.log ("a");
 })
