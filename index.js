@@ -15,8 +15,8 @@ app.get('/', (req, res) => {
     res.send (JSON.stringify({"ALEX": "AVIER"}))
 })
 
-
+const PORT = process.env.PORT;
 const httpServer = http.createServer (app);
-httpServer.listen(80, () =>{
+httpServer.listen(PORT, () =>{
     console.log ("a");
 })
